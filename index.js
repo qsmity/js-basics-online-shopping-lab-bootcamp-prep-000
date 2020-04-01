@@ -27,11 +27,10 @@ function addToCart(item) {
 function viewCart() {
   var group = " "
   if(cart.length > 1){
-  for (let i = 0; i < cart.length-1; i++){
+  for (var i = 0; i < cart.length-1; i++){
     group = group + `${cart[i].itemName} at $${cart[i].itemPrice},`
-    return `In your cart, you have${group} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
   }
-  
+  return `In your cart, you have${group} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
   } else if (cart.length === 1) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   } else {
