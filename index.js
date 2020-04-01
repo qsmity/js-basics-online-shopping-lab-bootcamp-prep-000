@@ -1,4 +1,4 @@
-var cart = [];
+var cart = ["jackson", "jefferson", "jack"];
 
 function getCart() {
  return cart;
@@ -17,9 +17,9 @@ console.log(total())
  return cart 
 }
 
-console.log(addToCart("pencil"))
-console.log(addToCart("car"))
-console.log(addToCart("bed"))
+// console.log(addToCart("pencil"))
+// console.log(addToCart("car"))
+// console.log(addToCart("bed"))
 
 function viewCart() {
   if(cart.length > 0){
@@ -34,7 +34,7 @@ function viewCart() {
   }
 }
 
-console.log(addToCart())
+// console.log(addToCart())
 
 function total() {
   var add = 0
@@ -55,10 +55,11 @@ function removeFromCart(item) {
     } else {
       
     }
-    // return cart
   }
   if (removedItem === ""){
-    return
+    return"That item is not in your cart."
+  } else {
+    return cart
   }
 }
 
