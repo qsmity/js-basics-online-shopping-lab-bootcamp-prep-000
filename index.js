@@ -1,6 +1,6 @@
-var cart = []
+// var cart = []
 
-// var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}, {itemName: "dust", itemPrice: 56} ];
+var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}, {itemName: "dust", itemPrice: 56} ];
 
 function getCart() {
  return cart;
@@ -25,19 +25,20 @@ function addToCart(item) {
 // console.log(addToCart("bed"))
 
 function viewCart() {
+  var group = ""
   if(cart.length > 1){
   for (i = 0; i < cart.length-1; i++){
-     ` ${cart[i].itemName} at $${cart[i].itemPrice},`
+    group =+ ` ${cart[i].itemName} at $${cart[i].itemPrice},`
   }
-  return message + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+  return `In your cart, you have${group} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
   } else if (cart.length === 1) {
-    return message + ` ${cart[0].itemName} at $${cart[0].itemPrice}.`
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   } else {
     return "Your shopping cart is empty."
   }
 }
 
-// console.log(viewCart())
+console.log(viewCart())
 
 function total() {
   var add = 0
