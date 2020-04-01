@@ -47,10 +47,12 @@ function total() {
 
 
 function removeFromCart(item) {
-  if(item){
-    
-  } else {
-    
+  for (i = 0; i < cart.length; i++){
+    if (item === cart[i].itemName){
+      
+    } else {
+      
+    }
   }
 }
 
