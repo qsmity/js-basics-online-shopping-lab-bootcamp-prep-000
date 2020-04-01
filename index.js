@@ -27,7 +27,7 @@ function addToCart(item) {
 function viewCart() {
   var group = " "
   if(cart.length > 1){
-  for (i = 0; i < cart.length-1; i++){
+  for (let i = 0; i < cart.length-1; i++){
     group = group + `${cart[i].itemName} at $${cart[i].itemPrice},`
   }
   return `In your cart, you have${group} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
@@ -52,7 +52,7 @@ function total() {
 
 function removeFromCart(item) {
   var removedItem = ""
-  for (i = 0; i < cart.length; i++){
+  for (let i = 0; i < cart.length; i++){
     if (item === cart[i].itemName){
       removedItem =+ cart.splice(i,1)
       return cart
