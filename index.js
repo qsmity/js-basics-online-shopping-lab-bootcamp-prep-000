@@ -32,7 +32,7 @@ function viewCart() {
   }
   var index = cart.length-1
   return message + ` and ${cart[index].itemName} at $${cart[index].itemPrice}.`
-  } else{
+  } else {
     return "Your shopping cart is empty."
   }
 }
