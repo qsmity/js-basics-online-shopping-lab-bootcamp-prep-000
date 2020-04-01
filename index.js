@@ -25,8 +25,8 @@ console.log(addToCart("pencil"))
 // console.log(addToCart("bed"))
 
 function viewCart() {
-  if(cart.length > 1){
   var message = "In your cart, you have"
+  if(cart.length > 1){
   for (i = 0; i < cart.length-1; i++){
     message = message + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
   }
