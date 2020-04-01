@@ -64,7 +64,9 @@ function removeFromCart(item) {
 // console.log(removeFromCart("cash"))
 
 function placeOrder(cardNumber) {
-  console.log(cardNumber)
+  if (cardNumber === undefined){
+    console.log("no credit card #")
+  }
 }
 
 console.log(placeOrder())
