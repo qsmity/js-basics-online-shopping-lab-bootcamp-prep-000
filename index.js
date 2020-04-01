@@ -49,7 +49,7 @@ function total() {
 function removeFromCart(item) {
   for (i = 0; i < cart.length; i++){
     if (item === cart[i].itemName){
-      cart[i].splic(i,0)
+      cart[i].splic(i,1)
     } else if() {
       
     }
