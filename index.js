@@ -49,7 +49,7 @@ function total() {
 function removeFromCart(item) {
   var removedItem = ""
   for (i = 0; i < cart.length; i++){
-    if (item === String){
+    if (item === 2){
       removedItem =+ cart[i].splice(i,1)
       console.log(cart)
     } 
@@ -61,7 +61,7 @@ function removeFromCart(item) {
   // }
 }
 
-console.log(removeFromCart("jack"))
+console.log(removeFromCart(2))
 
 function placeOrder(cardNumber) {
   // write your code here
