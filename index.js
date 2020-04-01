@@ -25,10 +25,10 @@ function addToCart(item) {
 // console.log(addToCart("bed"))
 
 function viewCart() {
-  var group = " "
+  var group = ""
   if(cart.length > 1){
   for (var i = 0; i < cart.length-1; i++){
-    group = group + `${cart[i].itemName} at $${cart[i].itemPrice}, `
+    group = group + `${cart[i].itemName} at $${cart[i].itemPrice},`
   }
   return `In your cart, you have${group} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
   } else if (cart.length === 1) {
