@@ -62,7 +62,7 @@ function removeFromCart(item) {
   // }
 }
 
-console.log(removeFromCart("jack"))
+console.log(removeFromCart("pencil"))
 
 function placeOrder(cardNumber) {
   // write your code here
