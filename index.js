@@ -30,8 +30,8 @@ function viewCart() {
   for (i = 0; i < cart.length-1; i++){
     message = message + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
   }
-  var index = cart.length-1
-  return message + ` and ${cart[index].itemName} at $${cart[index].itemPrice}.`
+  // var index = cart.length-1
+  return message + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`
   } else if (cart.length === 1) {
     return message + ` ${cart[0].itemName} at $${cart[0].itemPrice}.`
   } else {
