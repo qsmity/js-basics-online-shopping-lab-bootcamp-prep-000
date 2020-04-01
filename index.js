@@ -1,6 +1,6 @@
-// var cart = []
+var cart = []
 
-var cart = [{itemName: "pencil", itemPrice: 53}];
+// var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}];
 
 function getCart() {
  return cart;
