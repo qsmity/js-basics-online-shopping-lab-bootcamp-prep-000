@@ -47,12 +47,18 @@ function total() {
 
 
 function removeFromCart(item) {
+  var removedItem = ""
   for (i = 0; i < cart.length; i++){
     if (item === cart[i].itemName){
-      cart[i].splic(i,1)
-    } else if() {
+      removedItem =+ cart[i].splice(i,1)
+      console.log(cart)
+    } else {
       
     }
+    // return cart
+  }
+  if (removedItem === ""){
+    return
   }
 }
 
