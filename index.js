@@ -65,7 +65,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if (cardNumber === undefined){
-    console.log("no credit card #")
+    return ""
   }
 }
 
