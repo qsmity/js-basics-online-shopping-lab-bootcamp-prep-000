@@ -1,6 +1,6 @@
-// var cart = []
+var cart = []
 
-var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}, {itemName: "dust", itemPrice: 56} ];
+// var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}, {itemName: "dust", itemPrice: 56} ];
 
 function getCart() {
  return cart;
@@ -39,7 +39,7 @@ function viewCart() {
   }
 }
 
-console.log(viewCart())
+// console.log(viewCart())
 
 function total() {
   var add = 0
