@@ -1,6 +1,6 @@
-var cart = []
+// var cart = []
 
-// var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}];
+var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}];
 
 function getCart() {
  return cart;
@@ -15,12 +15,12 @@ function addToCart(item) {
  var price =  Math.floor(Math.random() * (100 * 1) + 1)
  cart.push(Object.assign({},{itemName: item, itemPrice: price}))
  return `${item} has been added to your cart.`
-console.log(viewCart())
-console.log(total())
+// console.log(viewCart())
+// console.log(total())
  return cart 
 }
 
-console.log(addToCart("pencil"))
+// console.log(addToCart("pencil"))
 // console.log(addToCart("car"))
 // console.log(addToCart("bed"))
 
@@ -39,7 +39,7 @@ function viewCart() {
   }
 }
 
-// console.log(addToCart())
+console.log(viewCart())
 
 function total() {
   var add = 0
