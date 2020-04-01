@@ -61,8 +61,9 @@ function removeFromCart(item) {
   }
 }
 
-console.log(removeFromCart("cash"))
+// console.log(removeFromCart("cash"))
 
 function placeOrder(cardNumber) {
-  // write your code here
+  console.log(cardNumber)
 }
+
