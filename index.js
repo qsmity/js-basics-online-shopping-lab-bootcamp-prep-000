@@ -50,7 +50,7 @@ function removeFromCart(item) {
   var removedItem = ""
   for (i = 0; i < cart.length; i++){
     if (item === 2){
-      removedItem =+ cart[i].splice(i,1)
+      removedItem =+ cart.splice(i,1)
       console.log(cart)
     } 
   }
