@@ -39,7 +39,7 @@ function viewCart() {
   }
 }
 
-console.log(viewCart())
+// console.log(viewCart())
 
 function total() {
   var add = 0
