@@ -25,7 +25,7 @@ function addToCart(item) {
 // console.log(addToCart("bed"))
 
 function viewCart() {
-  var group = ""
+  var group 
   if(cart.length > 1){
   for (i = 0; i < cart.length-1; i++){
     group =+ ` ${cart[i].itemName} at $${cart[i].itemPrice},`
