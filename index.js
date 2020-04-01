@@ -1,4 +1,6 @@
-var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}];
+var cart = []
+
+// var cart = [{itemName: "pencil", itemPrice: 53},{itemName: "cash", itemPrice: 24}];
 
 function getCart() {
  return cart;
@@ -71,4 +73,4 @@ function placeOrder(cardNumber) {
   }
 }
 
-console.log(placeOrder())
+// console.log(placeOrder())
