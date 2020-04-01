@@ -1,4 +1,4 @@
-var cart = ["jackson", "jefferson", "jack"];
+var cart = [{itemName: "pencil", itemPrice: 53}{itemName: "cash", itemPrice: 24}];
 
 function getCart() {
  return cart;
