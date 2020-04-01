@@ -52,9 +52,7 @@ function removeFromCart(item) {
     if (item === cart[i].itemName){
       removedItem =+ cart[i].splice(i,1)
       console.log(cart)
-    } else {
-      
-    }
+    } 
   }
   // if (removedItem === ""){
   //   return"That item is not in your cart."
