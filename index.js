@@ -10,19 +10,48 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ var price =  Math.floor(Math.random() * (100 * 1) + 1)
+ cart.push(Object.assign({},{itemName: item, itemPrice: price}))
+console.log(viewCart())
+console.log(total())
+ return cart 
 }
+
+console.log(addToCart("pencil"))
+console.log(addToCart("car"))
+console.log(addToCart("bed"))
 
 function viewCart() {
-  // write your code here
+  if(cart.length > 0){
+  var message = "In your cart, you have"
+  for (i = 0; i < cart.length-1; i++){
+    message = message + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
+  }
+  var index = cart.length-1
+  return message + ` and ${cart[index].itemName} at $${cart[index].itemPrice}.`
+  } else{
+    return "Your shopping cart is empty."
+  }
 }
+
+console.log(addToCart())
 
 function total() {
-  // write your code here
+  var add = 0
+  for (i = 0; i < cart.length; i++){
+    add = add + cart[i].itemPrice
+  }
+  return add
 }
 
+
+
 function removeFromCart(item) {
-  // write your code here
+  if(item){
+    
+  } else {
+    
+  }
 }
 
 function placeOrder(cardNumber) {
