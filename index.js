@@ -67,3 +67,4 @@ function placeOrder(cardNumber) {
   console.log(cardNumber)
 }
 
+console.log(placeOrder())
