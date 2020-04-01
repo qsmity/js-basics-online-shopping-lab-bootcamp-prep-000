@@ -61,7 +61,7 @@ function removeFromCart(item) {
   }
 }
 
-console.log(removeFromCart("pencil"))
+console.log(removeFromCart("cash"))
 
 function placeOrder(cardNumber) {
   // write your code here
