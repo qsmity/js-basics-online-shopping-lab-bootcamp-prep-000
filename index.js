@@ -15,12 +15,12 @@ function addToCart(item) {
  var price =  Math.floor(Math.random() * (100 * 1) + 1)
  cart.push(Object.assign({},{itemName: item, itemPrice: price}))
  return `${item} has been added to your cart.`
-// console.log(viewCart())
+console.log(viewCart())
 // console.log(total())
  return cart 
 }
 
-// console.log(addToCart("pencil"))
+console.log(addToCart("pencil"))
 // console.log(addToCart("car"))
 // console.log(addToCart("bed"))
 
@@ -33,7 +33,7 @@ function viewCart() {
   var index = cart.length-1
   return message + ` and ${cart[index].itemName} at $${cart[index].itemPrice}.`
   } else if(cart.length === 1) {
-    return message + `
+    return message + ` ${cart[i].itemName} at $${cart[i].itemPrice}.`
   } else {
     return "Your shopping cart is empty."
   }
