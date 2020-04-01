@@ -63,6 +63,8 @@ function removeFromCart(item) {
   }
 }
 
+console.log(removeFromCart("jack"))
+
 function placeOrder(cardNumber) {
   // write your code here
 }
