@@ -71,4 +71,4 @@ function placeOrder(cardNumber) {
   }
 }
 
-console.log(9999999999)
+console.log(placeOrder(99999999))
