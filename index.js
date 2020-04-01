@@ -25,13 +25,15 @@ function addToCart(item) {
 // console.log(addToCart("bed"))
 
 function viewCart() {
-  if(cart.length > 0){
+  if(cart.length > 1){
   var message = "In your cart, you have"
   for (i = 0; i < cart.length-1; i++){
     message = message + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
   }
   var index = cart.length-1
   return message + ` and ${cart[index].itemName} at $${cart[index].itemPrice}.`
+  } else if(cart.length === 1) {
+    return message + `
   } else {
     return "Your shopping cart is empty."
   }
